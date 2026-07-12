@@ -3,136 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CosmoFlux — Gun Launch to Orbit</title>
-<meta name="description" content="CosmoFlux builds light-gas gun launchers for affordable, high-cadence space launch.">
+<title>CosmoFlux</title>
+<meta name="description" content="CosmoFlux builds light-gas gun launchers for low-cost bulk cargo delivery to orbit.">
 <style>
-  :root{
-    --ink:#e8ecf4;
-    --ink-dim:#aab4c8;
-    --accent:#7fd4ff;
-    --panel:rgba(8,12,24,.72);
-    --line:rgba(127,212,255,.25);
-  }
   *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
   body{
-    font-family:"Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif;
-    color:var(--ink);
-    background:#05070f url("veil_bg.jpg") center/cover no-repeat fixed;
-    min-height:100vh;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    color:#111;
+    background:#fff;
+    font-size:16px;
+    line-height:1.65;
   }
-  /* dark veil over the nebula so text stays readable */
-  body::before{
-    content:"";position:fixed;inset:0;z-index:-1;
-    background:linear-gradient(180deg,rgba(4,6,14,.82) 0%,rgba(4,6,14,.66) 40%,rgba(4,6,14,.85) 100%);
-  }
-  header{
-    position:sticky;top:0;z-index:10;
-    display:flex;align-items:center;justify-content:space-between;
-    padding:1rem 6vw;
-    background:rgba(4,6,14,.78);backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line);
-  }
-  .logo{font-size:1.15rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
-  .logo span{color:var(--accent)}
-  nav a{
-    color:var(--ink-dim);text-decoration:none;margin-left:2rem;
-    font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;
-  }
-  nav a:hover{color:var(--accent)}
-  .hero{
-    min-height:46vh;display:flex;flex-direction:column;justify-content:center;
-    padding:4rem 6vw 2rem;max-width:900px;
-  }
-  .hero h1{font-size:clamp(1.9rem,4.5vw,3.2rem);font-weight:700;line-height:1.15}
-  .hero h1 em{color:var(--accent);font-style:normal}
-  .hero p{margin-top:1rem;color:var(--ink-dim);font-size:1.05rem;max-width:36rem}
-  section{padding:3.5rem 6vw;max-width:1100px;margin:0 auto}
-  h2{
-    font-size:1.5rem;letter-spacing:.12em;text-transform:uppercase;
-    color:var(--accent);margin-bottom:1.4rem;
-  }
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem}
-  .card{
-    background:var(--panel);border:1px solid var(--line);border-radius:10px;
-    padding:1.4rem;backdrop-filter:blur(4px);
-  }
-  .card h3{font-size:1rem;margin-bottom:.5rem;color:var(--ink)}
-  .card p{font-size:.92rem;line-height:1.55;color:var(--ink-dim)}
-  .stat{font-size:1.9rem;font-weight:700;color:var(--accent)}
-  .stat-label{font-size:.8rem;color:var(--ink-dim);letter-spacing:.08em;text-transform:uppercase}
-  footer{
-    padding:2rem 6vw;border-top:1px solid var(--line);
-    background:rgba(4,6,14,.8);
-    font-size:.75rem;color:var(--ink-dim);
-  }
-  footer a{color:var(--accent)}
+  .page{max-width:640px;margin:0 auto;padding:3.5rem 1.25rem 2rem}
+  header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:3rem}
+  .wordmark{font-weight:700;font-size:1.05rem;letter-spacing:.02em}
+  nav{font-size:.9rem}
+  nav a{color:#111;text-decoration:none;margin-left:1.1rem}
+  nav a:hover{text-decoration:underline}
+  h1{font-size:1.35rem;font-weight:700;margin-bottom:1rem}
+  h2{font-size:1rem;font-weight:700;margin:2.75rem 0 .75rem}
+  p{margin-bottom:1rem}
+  figure{margin:2rem 0}
+  figure img{width:100%;display:block}
+  figcaption{font-size:.72rem;color:#999;margin-top:.35rem}
+  figcaption a{color:#999}
+  ul{list-style:none;margin-bottom:1rem}
+  li{padding-left:1.1rem;position:relative;margin-bottom:.35rem}
+  li::before{content:"—";position:absolute;left:0;color:#bbb}
+  .quiet{color:#555}
+  footer{margin-top:4rem;padding-top:1rem;border-top:1px solid #eee;font-size:.78rem;color:#999}
+  footer a{color:#999}
 </style>
 </head>
 <body>
+<div class="page">
 
 <header>
-  <div class="logo">Cosmo<span>Flux</span></div>
+  <span class="wordmark">CosmoFlux</span>
   <nav>
-    <a href="#main">Main</a>
-    <a href="#technology">Technology</a>
+    <a href="#main">[Main]</a>
+    <a href="#technology">[Technology]</a>
   </nav>
 </header>
 
-<div class="hero">
-  <h1>Orbit shouldn't cost a fortune.<br>We <em>shoot</em> cargo into space.</h1>
-  <p>CosmoFlux builds ground-based light-gas gun launchers — reusable artillery for the orbital economy.</p>
-</div>
-
 <section id="main">
-  <h2>Main — The Launch Scarcity Problem</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Demand outruns supply</h3>
-      <p>Satellite constellations, orbital stations and in-space manufacturing all need mass in orbit — far more than today's rocket fleets can lift. Launch slots are booked years ahead.</p>
-    </div>
-    <div class="card">
-      <h3>Rockets are mostly fuel</h3>
-      <p>A conventional rocket is ~90% propellant and tanks. You burn an entire vehicle's worth of complexity to deliver a small payload fraction, and every launch consumes costly hardware and range time.</p>
-    </div>
-    <div class="card">
-      <h3>Our answer</h3>
-      <p>Leave the propellant on the ground. A fixed gun launcher delivers rugged bulk cargo — fuel, water, metals, shielding — at high cadence, reserving rockets for people and delicate payloads.</p>
-    </div>
-  </div>
+  <h1>Gun launch for bulk cargo to orbit.</h1>
+  <p>Demand for mass in orbit — propellant, water, metals, shielding — is growing faster than rocket capacity. Rockets are mostly fuel and expendable hardware; they are the wrong tool for cargo that doesn't mind acceleration.</p>
+  <p>CosmoFlux builds ground-based light-gas gun launchers. The launcher stays on the ground, is reused thousands of times, and the marginal cost of a shot is gas, energy, and a simple projectile.</p>
+
+  <figure>
+    <img src="veil_bg.jpg" alt="The Veil Nebula">
+    <figcaption><a href="https://esahubble.org/images/potw2113a/">Veil Nebula</a>, ESA/Hubble &amp; NASA, Z. Levay (CC BY 4.0)</figcaption>
+  </figure>
 </section>
 
 <section id="technology">
-  <h2>Technology — Light-Gas Gun Launch</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>How it works</h3>
-      <p>A piston driven by combustion compresses a light gas — hydrogen or helium. Its low molecular weight gives a very high speed of sound, so the expanding gas can push a projectile to several km/s along a long evacuated barrel.</p>
-    </div>
-    <div class="card">
-      <h3>Proven physics</h3>
-      <p>Two-stage light-gas guns routinely reach 6–7 km/s in impact labs. In 1966, Project HARP fired a 180&nbsp;kg projectile to 180&nbsp;km altitude with a 16-inch gun — gun launch to space is demonstrated, not hypothetical.</p>
-    </div>
-    <div class="card">
-      <h3>Built for cargo</h3>
-      <p>Acceleration reaches thousands of g, so we launch hardened cargo, not crews. A small onboard kick stage circularizes the orbit after the ballistic ascent.</p>
-    </div>
-    <div class="card">
-      <h3>Why it's cheap</h3>
-      <p>The launcher stays on the ground and is reused thousands of times. Marginal cost per shot is gas, energy and a simple projectile — targeting well under $500/kg to LEO.</p>
-    </div>
-  </div>
-  <div class="cards" style="margin-top:1.2rem">
-    <div class="card"><div class="stat">6+ km/s</div><div class="stat-label">muzzle velocity class</div></div>
-    <div class="card"><div class="stat">&lt;$500/kg</div><div class="stat-label">target cost to LEO</div></div>
-    <div class="card"><div class="stat">10×/day</div><div class="stat-label">launch cadence goal</div></div>
-  </div>
+  <h2>Technology</h2>
+  <p>A two-stage light-gas gun: a combustion-driven piston compresses hydrogen, whose high sound speed accelerates the projectile down a long evacuated barrel. An onboard kick stage circularizes the orbit after ballistic ascent.</p>
+  <ul>
+    <li>6+ km/s muzzle velocity class — routine in two-stage light-gas guns</li>
+    <li>Demonstrated basis: Project HARP reached 180 km altitude with a gun in 1966</li>
+    <li>Hardened cargo only — several thousand g during launch</li>
+    <li>Target: under $500/kg to LEO at 10 shots/day</li>
+  </ul>
+  <p class="quiet">We work with suppliers of high-pressure vessels, precision-bored tube sections, valves, and vacuum systems. Inquiries welcome.</p>
 </section>
 
 <footer>
-  © 2026 CosmoFlux Space · cosmofluxspace.com<br>
-  Background: <a href="https://esahubble.org/images/potw2113a/">“Return to the Veil Nebula”</a>, ESA/Hubble &amp; NASA, Z. Levay — <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, darkened overlay applied.
+  CosmoFlux Space · <a href="mailto:adam@cosmofluxspace.com">adam@cosmofluxspace.com</a>
 </footer>
 
+</div>
 </body>
 </html>
