@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CosmoFlux</title>
-<meta name="description" content="CosmoFlux builds light-gas gun launchers for low-cost bulk cargo delivery to orbit.">
+<title>cosmoflux</title>
+<meta name="description" content="CosmoFlux is building a 40-kilometer light-gas launcher for low-cost cargo delivery to orbit.">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
   body{
@@ -15,41 +15,44 @@
     line-height:1.65;
   }
   .page{max-width:640px;margin:0 auto;padding:3.5rem 1.25rem 2rem}
-  header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:3rem}
-  .wordmark{font-weight:700;font-size:1.05rem;letter-spacing:.02em}
-  nav{font-size:.9rem}
-  nav a{color:#111;text-decoration:none;margin-left:1.1rem}
+  header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:3.5rem}
+  .wordmark{font-weight:700;font-size:1.05rem}
+  nav{font-size:.85rem}
+  nav a{color:#111;text-decoration:none;margin-left:1.25rem}
   nav a:hover{text-decoration:underline}
   h1{font-size:1.35rem;font-weight:700;margin-bottom:1rem}
-  h2{font-size:1rem;font-weight:700;margin:2.75rem 0 .75rem}
+  .label{
+    font-size:.72rem;font-weight:600;letter-spacing:.14em;
+    color:#999;margin:3rem 0 .75rem;
+  }
   p{margin-bottom:1rem}
   figure{margin:2rem 0}
   figure img{width:100%;display:block}
-  figcaption{font-size:.72rem;color:#999;margin-top:.35rem}
-  figcaption a{color:#999}
-  ul{list-style:none;margin-bottom:1rem}
-  li{padding-left:1.1rem;position:relative;margin-bottom:.35rem}
-  li::before{content:"—";position:absolute;left:0;color:#bbb}
+  figcaption{font-size:.7rem;color:#aaa;margin-top:.35rem}
+  figcaption a{color:#aaa}
+  table{border-collapse:collapse;width:100%;margin-bottom:1rem;font-size:.92rem}
+  td{padding:.4rem 0;border-bottom:1px solid #f0f0f0;vertical-align:top}
+  td:first-child{color:#888;width:11rem;padding-right:1rem}
   .quiet{color:#555}
-  footer{margin-top:4rem;padding-top:1rem;border-top:1px solid #eee;font-size:.78rem;color:#999}
-  footer a{color:#999}
+  footer{margin-top:4.5rem;padding-top:1rem;border-top:1px solid #eee;font-size:.75rem;color:#aaa}
+  footer a{color:#aaa}
 </style>
 </head>
 <body>
 <div class="page">
 
 <header>
-  <span class="wordmark">CosmoFlux</span>
+  <span class="wordmark">cosmoflux</span>
   <nav>
-    <a href="#main">[Main]</a>
-    <a href="#technology">[Technology]</a>
+    <a href="#main">main →</a>
+    <a href="#technology">technology →</a>
   </nav>
 </header>
 
 <section id="main">
-  <h1>Gun launch for bulk cargo to orbit.</h1>
-  <p>Demand for mass in orbit — propellant, water, metals, shielding — is growing faster than rocket capacity. Rockets are mostly fuel and expendable hardware; they are the wrong tool for cargo that doesn't mind acceleration.</p>
-  <p>CosmoFlux builds ground-based light-gas gun launchers. The launcher stays on the ground, is reused thousands of times, and the marginal cost of a shot is gas, energy, and a simple projectile.</p>
+  <h1>We are building a 40-kilometer gun that launches cargo to orbit.</h1>
+  <p>Everything planned for orbit — depots, stations, in-space industry — needs far more mass launched than rockets will supply. A rocket burns an entire vehicle to deliver a small payload fraction.</p>
+  <p>Our launcher stays on the ground. It fires a projectile up its barrel and is ready to fire again the same day. The cost of a shot is gas, electricity, and a simple vehicle.</p>
 
   <figure>
     <img src="veil_bg.jpg" alt="The Veil Nebula">
@@ -58,19 +61,25 @@
 </section>
 
 <section id="technology">
-  <h2>Technology</h2>
-  <p>A two-stage light-gas gun: a combustion-driven piston compresses hydrogen, whose high sound speed accelerates the projectile down a long evacuated barrel. An onboard kick stage circularizes the orbit after ballistic ascent.</p>
-  <ul>
-    <li>6+ km/s muzzle velocity class — routine in two-stage light-gas guns</li>
-    <li>Demonstrated basis: Project HARP reached 180 km altitude with a gun in 1966</li>
-    <li>Hardened cargo only — several thousand g during launch</li>
-    <li>Target: under $500/kg to LEO at 10 shots/day</li>
-  </ul>
-  <p class="quiet">We work with suppliers of high-pressure vessels, precision-bored tube sections, valves, and vacuum systems. Inquiries welcome.</p>
+  <div class="label">01 — TECHNOLOGY</div>
+  <p>A 40&nbsp;km evacuated barrel built from sectioned steel tube, driven by compressed hydrogen. The full length is used for acceleration, so the ride stays gentle: under 80&nbsp;g, within reach of properly mounted conventional satellite hardware — not just hardened cargo. A small onboard stage circularizes the orbit after exit.</p>
+  <table>
+    <tr><td>Barrel length</td><td>40 km, evacuated, sectioned steel tube</td></tr>
+    <tr><td>Working gas</td><td>Hydrogen</td></tr>
+    <tr><td>Exit velocity</td><td>~8 km/s</td></tr>
+    <tr><td>Peak acceleration</td><td>&lt;80 g</td></tr>
+    <tr><td>Cadence</td><td>Multiple shots per day per launcher</td></tr>
+    <tr><td>Cost target</td><td>Under $500/kg to LEO</td></tr>
+  </table>
+</section>
+
+<section id="suppliers">
+  <div class="label">02 — SUPPLIERS</div>
+  <p class="quiet">We are sourcing large-bore steel tube sections, high-pressure vessels and valves, vacuum pumps and gate systems, and hydrogen infrastructure. Inquiries welcome.</p>
 </section>
 
 <footer>
-  CosmoFlux Space · <a href="mailto:adam@cosmofluxspace.com">adam@cosmofluxspace.com</a>
+  cosmoflux · <a href="mailto:adam@cosmofluxspace.com">adam@cosmofluxspace.com</a>
 </footer>
 
 </div>
