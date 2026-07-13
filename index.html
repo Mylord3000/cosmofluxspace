@@ -8,34 +8,30 @@
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
   body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-    color:#111;
-    background:#fff;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#1a1a18;
+    background:#faf7f0;
     font-size:16px;
     line-height:1.65;
   }
   .page{max-width:640px;margin:0 auto;padding:3.5rem 1.25rem 2rem}
   header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:3.5rem}
-  .wordmark{font-weight:700;font-size:1.05rem}
-  nav{font-size:.85rem}
-  nav a{color:#111;text-decoration:none;margin-left:1.25rem}
+  .wordmark{font-weight:700}
+  nav a{color:#1a1a18;text-decoration:none;margin-left:1.25rem}
   nav a:hover{text-decoration:underline}
   h1{font-size:1.35rem;font-weight:700;margin-bottom:1rem}
-  .label{
-    font-size:.72rem;font-weight:600;letter-spacing:.14em;
-    color:#999;margin:3rem 0 .75rem;
-  }
+  h2{font-size:1rem;font-weight:700;margin:3rem 0 .75rem}
   p{margin-bottom:1rem}
-  figure{margin:2rem 0}
+  table{border-collapse:collapse;width:100%;margin-bottom:1rem}
+  td{padding:.4rem 0;border-bottom:1px solid #eee8dc;vertical-align:top}
+  td:first-child{color:#8a857c;width:11rem;padding-right:1rem}
+  figure{margin:3rem 0 0}
   figure img{width:100%;display:block}
-  figcaption{font-size:.7rem;color:#aaa;margin-top:.35rem}
-  figcaption a{color:#aaa}
-  table{border-collapse:collapse;width:100%;margin-bottom:1rem;font-size:.92rem}
-  td{padding:.4rem 0;border-bottom:1px solid #f0f0f0;vertical-align:top}
-  td:first-child{color:#888;width:11rem;padding-right:1rem}
-  .quiet{color:#555}
-  footer{margin-top:4.5rem;padding-top:1rem;border-top:1px solid #eee;font-size:.75rem;color:#aaa}
-  footer a{color:#aaa}
+  figcaption{font-size:.75rem;color:#8a857c;margin-top:.4rem}
+  figcaption a{color:#8a857c}
+  footer{margin-top:2.5rem;padding-top:1.25rem;border-top:1px solid #eee8dc}
+  footer a{color:#1a1a18;text-decoration:none}
+  footer a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
@@ -44,25 +40,20 @@
 <header>
   <span class="wordmark">cosmoflux</span>
   <nav>
-    <a href="#main">main →</a>
-    <a href="#technology">technology →</a>
+    <a href="#main">main</a>
+    <a href="#technology">technology</a>
   </nav>
 </header>
 
 <section id="main">
   <h1>We are building a 40-kilometer gun that launches cargo to orbit.</h1>
-  <p>Everything planned for orbit — depots, stations, in-space industry — needs far more mass launched than rockets will supply. A rocket burns an entire vehicle to deliver a small payload fraction.</p>
+  <p>Everything planned for orbit, from depots to stations to in-space industry, needs far more mass launched than rockets will supply. A rocket burns an entire vehicle to deliver a small payload fraction.</p>
   <p>Our launcher stays on the ground. It fires a projectile up its barrel and is ready to fire again the same day. The cost of a shot is gas, electricity, and a simple vehicle.</p>
-
-  <figure>
-    <img src="veil_bg.jpg" alt="The Veil Nebula">
-    <figcaption><a href="https://esahubble.org/images/potw2113a/">Veil Nebula</a>, ESA/Hubble &amp; NASA, Z. Levay (CC BY 4.0)</figcaption>
-  </figure>
 </section>
 
 <section id="technology">
-  <div class="label">01 — TECHNOLOGY</div>
-  <p>A 40&nbsp;km evacuated barrel built from sectioned steel tube, driven by compressed hydrogen. The full length is used for acceleration, so the ride stays gentle: under 80&nbsp;g, within reach of properly mounted conventional satellite hardware — not just hardened cargo. A small onboard stage circularizes the orbit after exit.</p>
+  <h2>Technology</h2>
+  <p>A 40 km evacuated barrel built from sectioned steel tube, driven by compressed hydrogen. The full length is used for acceleration, so the ride stays gentle: under 80 g, within reach of properly mounted conventional satellite hardware, not just hardened cargo. A small onboard stage circularizes the orbit after exit.</p>
   <table>
     <tr><td>Barrel length</td><td>40 km, evacuated, sectioned steel tube</td></tr>
     <tr><td>Working gas</td><td>Hydrogen</td></tr>
@@ -74,12 +65,17 @@
 </section>
 
 <section id="suppliers">
-  <div class="label">02 — SUPPLIERS</div>
-  <p class="quiet">We are sourcing large-bore steel tube sections, high-pressure vessels and valves, vacuum pumps and gate systems, and hydrogen infrastructure. Inquiries welcome.</p>
+  <h2>Suppliers</h2>
+  <p>We are sourcing large-bore steel tube sections, high-pressure vessels and valves, vacuum pumps and gate systems, and hydrogen infrastructure. Inquiries welcome.</p>
 </section>
 
+<figure>
+  <img src="veil_bg.jpg" alt="The Veil Nebula">
+  <figcaption><a href="https://esahubble.org/images/potw2113a/">Veil Nebula</a>, ESA/Hubble &amp; NASA, Z. Levay (CC BY 4.0)</figcaption>
+</figure>
+
 <footer>
-  cosmoflux · <a href="mailto:adam@cosmofluxspace.com">adam@cosmofluxspace.com</a>
+  <a href="mailto:adam@cosmofluxspace.com">adam@cosmofluxspace.com</a>
 </footer>
 
 </div>
