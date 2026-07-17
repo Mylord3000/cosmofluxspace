@@ -25,6 +25,14 @@
   table{border-collapse:collapse;width:100%;margin-bottom:1rem}
   td{padding:.4rem 0;border-bottom:1px solid #eee8dc;vertical-align:top}
   td:first-child{color:#8a857c;width:11rem;padding-right:1rem}
+  .paper{
+    display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+    border:1px solid #e3dccb;background:#f4efe3;
+    padding:.85rem 1rem;margin:1.5rem 0 0;
+    color:#1a1a18;text-decoration:none;
+  }
+  .paper:hover{background:#efe8d8}
+  .paper-meta{color:#8a857c;font-size:.85rem;white-space:nowrap}
   figure{margin:3rem 0 0}
   figure img{width:100%;display:block}
   figcaption{font-size:.75rem;color:#8a857c;margin-top:.4rem}
@@ -49,6 +57,10 @@
   <h1>We are building a 40-kilometer gun that launches cargo to orbit.</h1>
   <p>Everything planned for orbit, from depots to stations to in-space industry, needs far more mass launched than rockets will supply. A rocket burns an entire vehicle to deliver a small payload fraction.</p>
   <p>Our launcher stays on the ground. It fires a projectile up its barrel and is ready to fire again the same day. The cost of a shot is gas, electricity, and a simple vehicle.</p>
+  <a class="paper" href="whitepaper.pdf" download>
+    <span>Whitepaper: light-gas gun launch analysis</span>
+    <span class="paper-meta">Download PDF, 0.6 MB</span>
+  </a>
 </section>
 
 <section id="technology">
